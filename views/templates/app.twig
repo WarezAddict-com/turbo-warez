@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>{% block title %}{% endblock %}</title>
+
+        <meta name="title" content="{{ AppName }}">
+        <meta name="description" content="{{ AppDesc }}">
+        <meta name="keywords" content="{{ AppKeywords }}">
+        <meta name="copyright" content="{{ AppName }}">
+        <meta name="author" content="{{ AppName }}">
+        <meta name="language" content="English">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="{{ AppName }}">
+        <meta name="application-name" content="{{ AppName }}">
+        <meta name="theme-color" content="#007bff">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <link rel="shortcut icon" href="{{ BaseUrl }}/favicon.ico">
+
+        <script src="{{ BaseUrl }}/js/jquery-3.6.1.min.js"></script>
+        <link rel="stylesheet" href="{{ BaseUrl }}/css/bootstrap.min.css">
+
+    </head>
+    <body>
+
+        {# Navbar #}
+        {% include "templates/partials/navbar.twig" %}
+
+        {# Main Wrap #}
+        <div class="container-fluid w-100 p-0 mt-5" id="main">
+
+            {# Search Box #}
+            {% include "templates/partials/searchbox.twig" %}
+
+            {# Flash Messages #}
+            {% if flash() %}
+                {% include "templates/partials/flash.twig" %}
+            {% endif %}
+
+            {# Main Content #}
+            {% block content %}{% endblock %}
+
+            {% if totalPages %}
+                {%  include 'templates/partials/pagination.twig' %}
+            {% endif %}
+
+        </div>
+
+        {% if debug %}
+            <div class="container" id="debug">
+                <div class="row">
+                    <div class="col-12 w-100 p-4 m-auto">
+                        {{ dump() }}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+
+        {# Footer #}
+        {% include "templates/partials/footer.twig" %}
+
+        {# JS and CSS #}
+        <script src="{{ BaseUrl }}/js/bootstrap.bundle.min.js"></script>
+        <script src="{{ BaseUrl }}/js/holder.min.js"></script>
+        <link rel="stylesheet" href="{{ BaseUrl }}/css/custom.css">
+        <script src="{{ BaseUrl }}/js/custom.js"></script>
+
+    </body>
+</html>

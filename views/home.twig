@@ -1,0 +1,19 @@
+{# Home #}
+
+{% extends "templates/app.twig" %}
+
+{% block title %}{{ AppName }} - Movies Now Playing In Theaters{% endblock %}
+
+{% block content %}
+
+    <div class="container w-100 p-0 m-auto" id="home">
+        <div class="row">
+
+            {% for mov in results %}
+                {% include 'templates/partials/card.twig' %}
+            {% endfor %}
+
+        </div>
+    </div>
+
+{% endblock %}

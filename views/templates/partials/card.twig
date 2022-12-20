@@ -1,0 +1,39 @@
+{# Movie Card #}
+
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 p-3">
+
+    <div class="container p-0 m-auto rounded shadow">
+
+        <a class="movieCard" href="{{ BaseUrl }}/movie/{{ mov.id }}">
+
+            <div class="card bg-dark p-0 m-auto">
+
+                <div class="card-header w-100 p-0 m-auto text-center justify-content-center">
+
+                    {% if mov.title %}
+                        <p class="card-title p-2 m-auto text-center justify-content-center text-primary fw-bold">{{ mov.title }}</p>
+                    {% elseif mov.original_title %}
+                        <p class="card-title p-2 m-auto text-center justify-content-center text-primary fw-bold">{{ mov.original_title }}</p>
+                    {% else %}
+                        <p class="card-title p-2 m-auto text-center justify-content-center text-primary fw-bold">Unknown</p>
+                    {% endif %}
+
+                </div>
+
+                <div class="card-body w-100 p-0 m-auto text-center justify-content-center">
+
+                    {% if mov.poster_path %}
+                        <img class="img-fluid w-100 p-0 m-auto" src="{{ TmdbImage }}{{ mov.poster_path }}" alt="Image" style="min-height: 250px !important;">
+                    {% else %}
+                        <img class="img-fluid w-100 p-0 m-auto" data-src="holder.js/100px450?text=No Image&random=yes" alt="Image" style="min-height: 250px !important;">
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</div>

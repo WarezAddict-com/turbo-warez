@@ -1,0 +1,27 @@
+{# Search #}
+
+{% extends "templates/app.twig" %}
+
+{% block title %}{{ AppName }} - Results for {{ query }}{% endblock %}
+
+{% block content %}
+
+<div class="container" id="search">
+    <div class="row">
+        <div class="col-12 pt-3 m-auto text-center">
+            <p class="h4 fw-bold">Results for {{ query }}...</p>
+        </div>
+    </div>
+    
+    {# Masonry #}
+    <div class='row' data-masonry='{"percentPosition": true}'>
+
+        {% for mov in results %}
+            {% include 'templates/partials/card.twig' %}
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

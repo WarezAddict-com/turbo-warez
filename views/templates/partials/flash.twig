@@ -1,0 +1,21 @@
+{# Flash Messages #}
+
+<div class="container w-100 p-0 mx-auto my-3" id="flash">
+    <div class="row w-100 p-0 m-auto">
+        <div class="col-12 w-100 p-0 m-auto">
+
+            {% for msg in flash() %}
+
+                <div class="alert alert-primary alert-dismissible fade show shadow w-100 p-2 m-auto" role="alert">
+
+                    <p class="h5 w-100 px-0 py-3 m-auto"><b>Message:</b> {{ msg.0 }}</p>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+                </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

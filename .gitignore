@@ -1,8 +1,7 @@
 ### Git Ignore
-*.log
 .env
+*.log
+/.phpintel/
 /vendor/
 /bin/
 /cache/*
-/.phpintel/
-composer.lock

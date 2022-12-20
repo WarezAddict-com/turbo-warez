@@ -1,0 +1,85 @@
+{# Pagination #}
+
+<div class="container w-100 py-3 m-auto text-center" id="pager">
+    <div class="row">
+        <div class="col-12 w-100 p-0 m-auto text-center">
+
+            <ul class="pagination pagination-lg" id="pagination">
+
+                {% if currentPage == 1 %}
+                    <li class="page-item">
+                        <a class="page-link fw-bold disabled" href="{{ baseUrl }}/#"><</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold active" href="{{ baseUrl }}">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">{{ currentPage + 1 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 2 }}">{{ currentPage + 2 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 3 }}">{{ currentPage + 3 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 4 }}">{{ currentPage + 4 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">></a>
+                    </li>
+                {% endif %}
+
+                {% if currentPage == 2 %}
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}"><</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}">{{ currentPage - 1 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold active" href="{{ baseUrl }}">{{ currentPage }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">{{ currentPage + 1 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 2 }}">{{ currentPage + 2 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 3 }}">{{ currentPage + 3 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">></a>
+                    </li>
+                {% endif %}
+
+                {% if currentPage >= 3 %}
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}"><</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 2 }}">{{ currentPage - 2 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}">{{ currentPage - 1 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold active" href="{{ baseUrl }}/?page={{ currentPage }}">{{ currentPage }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">{{ currentPage + 1 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 2 }}">{{ currentPage + 2 }}</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">></a>
+                    </li>
+                {% endif %}
+
+            </ul>
+
+        </div>
+    </div>
+</div>

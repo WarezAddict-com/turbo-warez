@@ -1,0 +1,78 @@
+{# Info #}
+
+{% extends "templates/app.twig" %}
+
+{% block title %}{{ results.original_title }}{% endblock %}
+
+{% block content %}
+
+<div class="container w-100 py-3 m-auto text-center" id="info">
+    <div class="row">
+
+        <div class="col-xs-12 col-sm-12 col-md-6 p-0 m-auto text-center">
+
+            {% if results.poster_path %}
+                <img class="img-fluid rounded shadow w-100 p-0 m-auto text-center" src="{{ TmdbImage }}{{ results.poster_path }}" alt="Image" id="posterImg" style="min-height: 250px !important; max-width: 500px !important;">
+            {% else %}
+                <img class="img-fluid rounded shadow w-100 p-0 m-auto text-center" data-src="holder.js/100px450?text=No Image&random=yes" alt="Image" id="posterImg" style="min-height: 250px !important; max-width: 500px !important;">
+            {% endif %}
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 p-0 m-auto text-center">
+
+            {% if results.original_title %}
+                <p class="w-100 px-0 py-3 m-auto text-center h3 fw-bold">{{ results.original_title }}</p>
+            {% else %}
+                <p class="w-100 px-0 py-3 m-auto text-center h3 fw-bold">Unknown</p>
+            {% endif %}
+
+            {% if results.tagline %}
+                <p class="w-100 p-0 m-auto text-center h5 text-muted">"{{ results.tagline }}"</p>
+            {% endif %}
+
+            {% if results.genres %}
+                <div class="w-100 px-3 pt-3 pb-5 m-auto text-center">
+                    {% for gen in results.genres %}
+                        <a class="btn btn-outline-primary shadow genre" href="{{ BaseUrl }}/genre/{{ gen.name }}">{{ gen.name }}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% if results.vote_average %}
+                <p class="w-100 px-3 pt-5 m-auto text-center h5"><strong>Avg Rating:</strong> {{ results.vote_average }} / 10</p>
+            {% else %}
+                <p class="w-100 px-3 pt-5 m-auto text-center h5"><strong>Avg Rating:</strong>Unknown</p>
+            {% endif %}
+
+            {% if results.release_date %}
+                <p class="w-100 px-3 pt-1 m-auto text-center h5"><strong>Release Date:</strong> {{ results.release_date|date('m-d-Y') }}</p>
+            {% endif %}
+
+            {% if results.runtime %}
+                <p class="w-100 px-3 pt-1 m-auto text-center h5"><strong>Runtime:</strong> {{ results.runtime }} mins</p>
+            {% endif %}
+
+            {% if results.revenue %}
+                <p class="w-100 px-3 pt-1 m-auto text-center h5"><strong>Revenue:</strong> ${{ results.revenue }}</p>
+            {% else %}
+                <p class="w-100 px-3 pt-1 m-auto text-center h5"><strong>Revenue:</strong> N/A</p>
+            {% endif %}
+
+            {% if results.overview %}
+                <p class="w-100 px-3 pt-5 m-auto text-center h5"><strong>Overview:</strong> {{ results.overview }}</p>
+            {% else %}
+                <p class="w-100 px-3 pt-5 m-auto text-center h5"><strong>Overview:</strong> No Information</p>
+            {% endif %}
+
+        </div>
+    </div>
+
+    <div class="row w-100 pt-5">
+        <div class="col-12 text-center p-0 m-auto">
+            <button class="btn btn-primary btn-lg shadow fw-bold" onclick="goBack()" id="goBack">Go Back</button>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
