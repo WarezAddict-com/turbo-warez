@@ -18,7 +18,7 @@ $ cd turbo-warez/
 
 ```
 $ composer install
-``|
+```
 
 **3) Create and Edit .env File**
 
