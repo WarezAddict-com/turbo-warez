@@ -1,0 +1,18 @@
+[2023-01-10T08:52:32.836716-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/","Params":[]} {"uid":"4384e63"}
+[2023-01-10T10:09:26.084042-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/login","Params":[]} {"uid":"45f8213"}
+[2023-01-10T10:09:58.851567-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"p@55w0rd1!","remember":"rememberMe","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"254dc0c"}
+[2023-01-10T10:10:44.545295-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/","Params":[]} {"uid":"ab2d459"}
+[2023-01-10T10:10:49.852998-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/login","Params":[]} {"uid":"e373165"}
+[2023-01-10T10:13:44.356755-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/login","Params":[]} {"uid":"21f765b"}
+[2023-01-10T10:14:03.501360-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/login","Params":[]} {"uid":"6d86674"}
+[2023-01-10T10:14:45.329578-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/login","Params":[]} {"uid":"bf1f5e3"}
+[2023-01-10T10:15:33.299643-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"p@55w0rd1!","remember":"rememberMe","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"7022598"}
+[2023-01-10T10:16:15.467936-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"p@55w0rd1!","remember":"rememberMe","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"e0b2a8d"}
+[2023-01-10T10:18:04.727940-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"p@55w0rd1!","remember":"rememberMe","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"bdec3c5"}
+[2023-01-10T10:18:29.009557-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"p@55w0rd1!","remember":"rememberMe","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"ef19ed1"}
+[2023-01-10T10:19:44.974897-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/login","Params":[]} {"uid":"d59bb29"}
+[2023-01-10T10:20:07.106594-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"p@55w0rd1!","remember":"yes","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"a9d67e2"}
+[2023-01-10T10:20:07.114906-05:00] Turbo-Warez.DEBUG: ERROR {"Code":0,"Message":"Cannot use [] for reading","File":"/var/www/turbo-warez/src/Controllers/AuthController.php","Line":54,"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"p@55w0rd1!","remember":"yes","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"a9d67e2"}
+[2023-01-10T10:21:14.814328-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/login","Params":[]} {"uid":"6c69666"}
+[2023-01-10T10:21:24.026377-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"POST","Path":"/login","Params":{"email":"turbo@warezaddict.com","password":"b4n5h335a","remember":"yes","csrf_name":"csrf63bd6c1287f70","csrf_value":"41825162048a2001ccaffbfaf03aef89"}} {"uid":"1e24246"}
+[2023-01-10T10:23:39.030913-05:00] Turbo-Warez.DEBUG: ERROR {"Method":"GET","Path":"/register","Params":[]} {"uid":"238f488"}

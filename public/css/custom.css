@@ -39,15 +39,6 @@ a:hover {
   opacity: 1 !important;
 }
 
-a.movieCard p.card-title {
-  color: #FFFFFF !important;
-  font-size: 1.35rem !important;
-}
-
-a.movieCard:hover p.card-title {
-  color: #007bff !important;
-}
-
 a.btn {
   color: #FFFFFF !important;
 }
@@ -93,19 +84,19 @@ a.nav-link.active {
 }
 
 a.page-link {
-  color: #007BFF !important;
+  color: #FFFFFF !important;
   background: rgba(0, 0, 0, 1.0) !important;
   border: 2px solid #007bff !important;
 }
 
 a.page-link:hover {
-  color: #FFFFFF !important;
+  color: #007bff !important;
 }
 
 a.page-link.active,
 a.page-link.active:hover {
-  color: #FFFFFF !important;
-  background-color: #007bff !important;
+  color: #007bff !important;
+  background-color: #000000 !important;
 }
 
 .b-red {
@@ -165,13 +156,13 @@ button#submit:hover {
 }
 
 #goBack {
-  color: #007bff !important;
+  color: #FFFFFF!important;
   background: rgba(0, 0, 0, 1.0) !important;
   border: 2px solid #007bff !important;
 }
 
 #goBack:hover {
-  color: #ffffff !important;
+  color: #007bff !important;
 }
 
 #debug {
@@ -190,14 +181,14 @@ button#submit:hover {
 }
 
 a#scroll {
-  color:  #007bff !important;
+  color:  #FFFFFF !important;
   border: 0px !important;
   text-decoration: none !important;
   outline: none !important;
 }
 
 a#scroll:hover {
-  color: #ffffff !important;
+  color: #007bff !important;
 }
 
 input {
@@ -211,20 +202,21 @@ input {
 }
 
 a.btn-outline-primary {
-  color: #007bff !important;
+  color: #FFFFFF !important;
   border: 1px solid #007bff !important;
   opacity: 1 !important;
   background: rgba(0, 0, 0, 1.0) !important;
 }
 
 a.btn-outline-primary:hover {
-  color: #FFFFFF !important;
+  color: #007bff !important;
   border: 1px solid #007bff !important;
   opacity: 1 !important;
 }
 
-#posterImg {
-  border: 5px solid #000000 !important;
+.text-muted {
+  color: #FFFFFF !important;
+  opacity: 0.65 !important;
 }
 
 ul#pagination {

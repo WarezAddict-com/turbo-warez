@@ -6,25 +6,32 @@
 
 {% block content %}
 
-    <div class="container py-4" id="login">
-        <div class="row">
-            <div class="col-12 w-100 bg-dark text-white rounded shadow">
+    <div class="container w-100 h-100 m-auto text-center py-4" id="login">
+        <div class="row w-100 h-100 m-auto text-center">
+            <div class="col-6 m-auto text-center bg-dark text-white rounded shadow">
 
-                <p class="w-100 p-3 m-auto text-center h4 fw-bold text-primary">Account Login</p>
+                <h3 class="h3 w-100 p-3 m-auto text-center fw-bold text-white">Account Login</h3>
 
                 <form class="form-group px-4" action="/login" method="POST">
-                    <div class="row py-2">
-                        <label for="email" class="w-100">Email Address:</label>
+                    <div class="row w-100 py-2">
+                        <label for="email" class="w-100 p-1">Email Address:</label>
                         <input class="form-control form-control-lg" type="text" name="email" id="email" placeholder="your@email.com" aria-label="Email" autocomplete="off">
                     </div>
-                    <div class="row py-2">
-                        <label for="password" class="w-100">Password:</label>
+                    <div class="row w-100 py-2">
+                        <label for="password" class="w-100 p-1">Password:</label>
                         <input class="form-control form-control-lg" type="password" name="password" id="password" placeholder="Password" aria-label="Password" autocomplete="off">
+                    </div>
+
+                    <div class="row w-100 pt-2 pb-0">
+                        <div class="p-0 m-auto text-center">
+                            <input class="form-check-input p-0 m-auto text-center" type="checkbox" name="remember" id="rememberMe" aria-label="Remember Me" value="yes" checked>
+                            <label class="form-check-label p-0 m-auto text-center" for="rememberMe">Remember Me?</label>
+                        </div>
                     </div>
 
                     {{ csrf }}
 
-                    <div class="w-100 py-4 m-auto text-center input-group-btn">
+                    <div class="w-100 pt-3 pb-4 m-auto text-center input-group-btn">
                         <button class="btn btn-lg btn-primary fw-bold" type="submit" id="login">Login</button>
                         <button class="btn btn-lg btn-primary fw-bold" type="button" id="forgot">Forgot?</button>
                     </div>

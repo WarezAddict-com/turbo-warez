@@ -56,17 +56,18 @@ class AuthController extends \Turbo\Controllers\Controller
         if ($admin == 1) {
             return $this->view->render($response, 'admin.twig', [
                 'debug' => $debug,
+                'username' => $username,
+                'password' => $password,
+                'admin' => $admin,
+            ]);
+        } else {
+            return $this->view->render($response, 'login.twig', [
+                'debug' => $debug,
+                'username' => $username,
+                'password' => $password,
                 'admin' => $admin,
             ]);
         }
-
-        /** Return View **/
-        return $this->view->render($response, 'login.twig', [
-            'debug' => $debug,
-            'username' => $username,
-            'password' => $password,
-            'admin' => $admin,
-        ]);
     }
 
     /** RegisterGet **/

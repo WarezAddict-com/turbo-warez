@@ -6,19 +6,19 @@
 
 {% block content %}
 
-<div class="container w-100 py-3 m-auto text-center" id="info">
+<div class="container w-100 py-3" id="info">
     <div class="row">
 
-        <div class="col-xs-12 col-sm-12 col-md-6 p-0 m-auto text-center">
+        <div class="col-xs-12 col-sm-6 col-md-6 p-0 m-auto text-center">
 
             {% if results.poster_path %}
-                <img class="img-fluid rounded shadow w-100 p-0 m-auto text-center" src="{{ TmdbImage }}{{ results.poster_path }}" alt="Image" id="posterImg" style="min-height: 250px !important; max-width: 500px !important;">
+                <img class="img-fluid rounded shadow w-100 p-0 m-auto text-center" src="{{ TmdbImage }}{{ results.poster_path }}" alt="Image" id="posterImg" style="min-height: 250px !important; max-width: 400px !important;">
             {% else %}
-                <img class="img-fluid rounded shadow w-100 p-0 m-auto text-center" data-src="holder.js/100px450?text=No Image&random=yes" alt="Image" id="posterImg" style="min-height: 250px !important; max-width: 500px !important;">
+                <img class="img-fluid rounded shadow w-100 p-0 m-auto text-center" data-src="holder.js/100px450?text=No Image&random=yes" alt="Image" id="posterImg" style="min-height: 250px !important; max-width: 400px !important;">
             {% endif %}
 
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 p-0 m-auto text-center">
+        <div class="col-xs-12 col-sm-6 col-md-6 p-3">
 
             {% if results.original_title %}
                 <p class="w-100 px-0 py-3 m-auto text-center h3 fw-bold">{{ results.original_title }}</p>

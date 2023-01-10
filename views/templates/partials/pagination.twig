@@ -8,7 +8,7 @@
 
                 {% if currentPage == 1 %}
                     <li class="page-item">
-                        <a class="page-link fw-bold disabled" href="{{ baseUrl }}/#"><</a>
+                        <a class="page-link fw-bold disabled" href="{{ baseUrl }}/#">Prev</a>
                     </li>
                     <li class="page-item">
                         <a class="page-link fw-bold active" href="{{ baseUrl }}">1</a>
@@ -26,13 +26,13 @@
                         <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 4 }}">{{ currentPage + 4 }}</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">></a>
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">Next</a>
                     </li>
                 {% endif %}
 
                 {% if currentPage == 2 %}
                     <li class="page-item">
-                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}"><</a>
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}">Prev</a>
                     </li>
                     <li class="page-item">
                         <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}">{{ currentPage - 1 }}</a>
@@ -50,13 +50,13 @@
                         <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 3 }}">{{ currentPage + 3 }}</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">></a>
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">Next</a>
                     </li>
                 {% endif %}
 
                 {% if currentPage >= 3 %}
                     <li class="page-item">
-                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}"><</a>
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 1 }}">Prev</a>
                     </li>
                     <li class="page-item">
                         <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage - 2 }}">{{ currentPage - 2 }}</a>
@@ -74,7 +74,7 @@
                         <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 2 }}">{{ currentPage + 2 }}</a>
                     </li>
                     <li class="page-item">
-                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">></a>
+                        <a class="page-link fw-bold" href="{{ baseUrl }}/?page={{ currentPage + 1 }}">Next</a>
                     </li>
                 {% endif %}
 
